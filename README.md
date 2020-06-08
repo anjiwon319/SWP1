@@ -1,2 +1,2 @@
 20203095 anjiwon
-Kookmin Univ. SW
+Kookmin Univ. SW(CS)
