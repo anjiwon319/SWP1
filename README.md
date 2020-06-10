@@ -1,3 +1,3 @@
-20203095	Anjiwon
+Anjiwon    20203095
 Kookmin Univ. SoftWare(CS)
 
