@@ -13,8 +13,8 @@ def application(environ, start_response):
         add = a + b
         mul = a * b
     except ValueError:
-        add = -1
-        mul = -1
+        add = "Value Error Occur"
+        mul = "Value Error Occur"
     response_body = html % {'add':add, 'mul':mul}
     start_response('200 OK', [
         ('Content-Type', 'text/html'),
