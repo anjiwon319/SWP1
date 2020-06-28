@@ -6,8 +6,8 @@ html = '''
                 B = <input type="number" name="b"><br><br>
             <input type="submit">
         </form>
-        <br><br>Add(A+B) = %(add)d <br><br>
-        Multiply(A*B) = %(mul)d
+        <br><br>Add(A+B) = %(add)s <br><br>
+        Multiply(A*B) = %(mul)s
     </body>
 </html>
 '''
