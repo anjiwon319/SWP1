@@ -13,8 +13,12 @@ def application(environ, start_response):
         add = a + b
         mul = a * b
     except ValueError:
-        add = "Value Error Occur"
-        mul = "Value Error Occur"
+        if '' in [a, b]:
+            add = "You didn't input value"
+            mul = "You didn't input value"
+        else:
+            add = "Please input number not string"
+            mul = "Please input number not string"
     response_body = html % {'add':add, 'mul':mul}
     start_response('200 OK', [
         ('Content-Type', 'text/html'),
