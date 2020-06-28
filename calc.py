@@ -8,10 +8,13 @@ def application(environ, start_response):
     a = d.get('a',[''])[0]
     b = d.get('b',[''])[0]
     add, mul = 0, 0
-    if a.isdigit() and b.isdigit():    
+    try:    
         a, b = int(a), int(b)
         add = a + b
         mul = a * b
+    except ValueError:
+        add = -1
+        mul = -1
     response_body = html % {'add':add, 'mul':mul}
     start_response('200 OK', [
         ('Content-Type', 'text/html'),
