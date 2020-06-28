@@ -8,7 +8,7 @@ def application(environ, start_response):
     a = d.get('a',[''])[0]
     b = d.get('b',[''])[0]
     add, mul = 0, 0
-    if '' not in [a, b]:
+    if a.isdigit() and b.isdigit():    
         a, b = int(a), int(b)
         add = a + b
         mul = a * b
